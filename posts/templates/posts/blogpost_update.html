@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block title%}
+        <title>Editer un blog</title>
+{% endblock%}
+
+{% block content%}
+
+<h1> Editer  l'article </h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input class="btn btn-submit" type="submit" value="Editer">
+</form>
+
+{% endblock%}
+
+

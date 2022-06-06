@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block title%}
+        <title>{{ post.title}}</title>
+{% endblock%}
+
+{% block content%}
+
+<h1> Ajouter un article </h1>
+<article class="post-detail">
+<h1>{{post.title}} </h1>
+<div> {{ post.content|linebreaks|safe}} </div>
+</article>
+{% endblock%}
+
+
